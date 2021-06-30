@@ -21,7 +21,7 @@ import java.time.LocalDateTime;
 @Setter
 @EqualsAndHashCode
 @EntityListeners(CustomAuditEntityListener.class)
-public class BaseEntity<ID> implements Serializable {
+public class BaseEntity<ID extends Serializable> implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
