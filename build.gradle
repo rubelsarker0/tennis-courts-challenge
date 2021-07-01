@@ -26,6 +26,8 @@ configurations {
 }
 
 dependencies {
+    testImplementation('org.mockito:mockito-inline:3.7.7')
+    testImplementation('org.mockito:mockito-junit-jupiter:3.7.7')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-jersey')
     compile('org.springframework.boot:spring-boot-starter-web')
